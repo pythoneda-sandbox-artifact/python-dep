@@ -1,8 +1,8 @@
-# sandbox-dep/pyprojecttoml.template
+# python-dep/pyprojecttoml.template
 #
-# This file is the template for rydnr/sandbox-dep's pyproject.toml
+# This file is the template for pythoneda-sandbox/python-dep's pyproject.toml
 #
-# Copyright (C) 2023-today rydnr's rydnr/sandbox-dep-artifact
+# Copyright (C) 2023-today rydnr's pythoneda-sandbox/python-dep-artifact
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
