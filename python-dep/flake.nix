@@ -2,7 +2,7 @@
 #
 # This file packages pythoneda-sandbox/python-dep as a Nix flake.
 #
-# Copyright (C) 2023-today rydnr's https://github.com/pythoneda-sandbox/pytho-dep-artifact
+# Copyright (C) 2023-today rydnr's https://github.com/pythoneda-sandbox/python-dep-artifact
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -32,7 +32,7 @@
       inputs.pythoneda-shared-pythoneda-banner.follows =
         "pythoneda-shared-pythoneda-banner";
       url =
-        "github:pythoneda-shared-pythoneda/domain-artifact/0.0.11?dir=domain";
+        "github:pythoneda-shared-pythoneda/domain-artifact/0.0.13?dir=domain";
     };
   };
   outputs = inputs:
