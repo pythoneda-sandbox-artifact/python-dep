@@ -3,7 +3,7 @@ rydnr/sandbox/dep/artifact/infrastructure/local_python_dep.py
 
 This file defines LocalPythonDep
 
-Copyright (C) 2023-today rydnr's pythoneda-sandbox/python-dep-artifact
+Copyright (C) 2023-today rydnr's pythoneda-sandbox-artifact/python-dep
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by

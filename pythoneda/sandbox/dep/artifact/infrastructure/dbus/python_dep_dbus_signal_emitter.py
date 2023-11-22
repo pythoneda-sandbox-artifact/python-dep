@@ -3,7 +3,7 @@ pythoneda/sandbox/dep/artifact/infrastructure/dbus/python_dep_dbus_signal_emitte
 
 This file defines the PythonDepDbusSignalEmitter class.
 
-Copyright (C) 2023-today rydnr's https://github.com/pythoneda-sandbox/python-dep-artifact-artifact
+Copyright (C) 2023-today rydnr's https://github.com/pythoneda-sandbox-artifact/python-dep
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by

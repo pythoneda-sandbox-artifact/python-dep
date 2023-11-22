@@ -3,7 +3,7 @@ pythoneda/sandbox/dep/artifact/sandbox.py
 
 This file declares the PythonDep class.
 
-Copyright (C) 2023-today rydnr's pythoneda-sandbox/python-dep-artifact
+Copyright (C) 2023-today rydnr's pythoneda-sandbox-artifact/python-dep
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -28,7 +28,7 @@ from pythoneda.shared.nix_flake import (
 
 class PythonDep(PythonPackage):
     """
-    Represents the pythoneda-sandbox/python-dep-artifact Python package.
+    Represents the pythoneda-sandbox/python-dep Python package.
 
     Class name: PythonDep
 
@@ -53,10 +53,10 @@ class PythonDep(PythonPackage):
         super().__init__(
             "rydnr",
             self.find_out_version(repositoryFolder),
-            f"https://github.com/pythoneda-sandbox/python-dep-artifact/{version}?dir=python-dep",
+            f"https://github.com/pythoneda-sandbox-def/python-dep/{version}",
             inputs,
             "pythoneda",
-            "Artifact space of https://github.com/pythoneda-sandbox/python-dep-artifact",
+            "Artifact space of https://github.com/pythoneda-sandbox/python-dep",
             self.__class__.url,
             License.from_id(
                 Gpl3.license_type(),
@@ -77,4 +77,4 @@ class PythonDep(PythonPackage):
         :return: Such url.
         :rtype: str
         """
-        return "https://github.com/pythoneda-sandbox/python-dep-artifact"
+        return "https://github.com/pythoneda-sandbox-def/python-dep"
