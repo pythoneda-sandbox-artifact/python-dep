@@ -90,7 +90,7 @@ class LocalPythonDep(LocalArtifact):
         :param folder: The repository folder.
         :type folder: str
         """
-        cls._singleton = LocalPythondDep(folder)
+        cls._singleton = LocalPythonDep(folder)
 
     @classmethod
     def instance(cls):
@@ -102,7 +102,7 @@ class LocalPythonDep(LocalArtifact):
         result = cls._singleton
         if result is None:
             LocalPythonDep.logger().error(
-                "LocalPythonDep not yet bound to a local folder. "
+                "LocalPythonDep not yet bound to a local folder. Please call #initialize(folder) first."
             )
         return result
 
@@ -114,7 +114,7 @@ class LocalPythonDep(LocalArtifact):
         :return: The url.
         :rtype: str
         """
-        return f"https://github.com/pythoneda-sandbox/python-dep-artifact/{version}?dir=python-dep"
+        return f"https://github.com/pythoneda-sandbox-artifact-def/python-dep/{version}"
 
     @classmethod
     @listen(StagedChangesCommitted)
