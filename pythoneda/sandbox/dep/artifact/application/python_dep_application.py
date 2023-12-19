@@ -24,7 +24,6 @@ from pythoneda.sandbox.dep.artifact.infrastructure import LocalPythonDep
 from pythoneda.shared.artifact import LocalArtifact
 from pythoneda.shared.artifact.application import LocalArtifactApp
 from pythoneda.shared.artifact.infrastructure.cli import (
-    ArtifactCli,
     RepositoryFolderCli,
 )
 from pythoneda.shared.artifact.infrastructure.dbus import (
@@ -33,7 +32,6 @@ from pythoneda.shared.artifact.infrastructure.dbus import (
 )
 
 
-@enable(ArtifactCli)
 @enable(ArtifactDbusSignalEmitter)
 @enable(ArtifactDbusSignalListener)
 @enable(RepositoryFolderCli)
