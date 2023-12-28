@@ -18,12 +18,19 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.
 """
-from pythoneda.shared.artifact import PythonPackage
+from pythoneda.shared.artifact import (
+    ArchitecturalRole,
+    HexagonalLayer,
+    PescioSpace,
+    PythonPackage,
+)
 from pythoneda.shared.nix_flake import (
     FlakeUtilsNixFlake,
     License,
+    NixosNixFlake,
     PythonedaSharedPythonedaBannerNixFlake,
 )
+from pythoneda.shared.nix_flake.licenses import Gpl3
 
 
 class PythonDep(PythonPackage):
@@ -39,20 +46,19 @@ class PythonDep(PythonPackage):
         - pythoneda.shared.artifact.PythonPackage
     """
 
-    def __init__(self, repositoryFolder: str):
+    def __init__(self, version: str):
         """
         Creates a new PythonDep instance.
-        :param repositoryFolder: The repository folder.
-        :type repositoryFolder: str
+        :param version: The version.
+        :type version: str
         """
         flake_utils = FlakeUtilsNixFlake.default()
         nixos = NixosNixFlake.default()
         banner = PythonedaSharedPythonedaBannerNixFlake.default()
         inputs = [flake_utils, nixos, banner]
-        version = self.find_out_version(repositoryFolder)
         super().__init__(
             "rydnr",
-            self.find_out_version(repositoryFolder),
+            version,
             f"https://github.com/pythoneda-sandbox-def/python-dep/{version}",
             inputs,
             "pythoneda",
@@ -67,6 +73,9 @@ class PythonDep(PythonPackage):
             ["rydnr <github@acm-sl.org>"],
             2023,
             "rydnr",
+            PescioSpace.DECISION,
+            ArchitecturalRole.BOUNDED_CONTEXT,
+            HexagonalLayer.DOMAIN,
         )
 
     @classmethod
