@@ -1,3 +1,4 @@
+# vim: set fileencoding=utf-8
 """
 rydnr/sandbox/dep/artifact/infrastructure/local_python_dep.py
 
@@ -67,7 +68,7 @@ class LocalPythonDep(PythonDep):
         """
         Checks whether given event refers to this artifact.
         :param event: The event to check.
-        :type event: pythoneda.Event
+        :type event: pythoneda.shared.Event
         """
         return event.matches_repository_folder(self.repository_folder)
 
