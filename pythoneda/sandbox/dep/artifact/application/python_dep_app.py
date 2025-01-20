@@ -76,9 +76,7 @@ class PythonDepApp(LocalArtifactApp):
 
 
 if __name__ == "__main__":
-    asyncio.run(
-        PythonDepApp.main("pythoneda.sandbox.dep.artifact.application.PythonDepApp")
-    )
+    asyncio.run(PythonDepApp.main())
 # vim: syntax=python ts=4 sw=4 sts=4 tw=79 sr et
 # Local Variables:
 # mode: python
